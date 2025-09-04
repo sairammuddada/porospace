@@ -2,6 +2,7 @@
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 export default function Blogs() {
    
@@ -27,7 +28,7 @@ export default function Blogs() {
                                     <span className="badge bg-primary mb-2">Technology</span>
                                     <h5 className="card-title">How AI is Changing the Future</h5>
                                     <p className="card-text text-muted">Artificial Intelligence is revolutionizing industries. Learn how it impacts businesses and daily life.</p>
-                                    <a href="blog.html" className="btn btn-sm btn-outline-primary">Read More</a>
+                                    <Link href="/blog" className="btn btn-sm btn-outline-primary">Read More</Link>
                                 </div>
                                 <div className="card-footer text-muted small">
                                     Posted on Aug 25, 2025 by Admin
@@ -42,7 +43,7 @@ export default function Blogs() {
                                     <span className="badge bg-success mb-2">Lifestyle</span>
                                     <h5 className="card-title">10 Tips for a Healthy Work-Life Balance</h5>
                                     <p className="card-text text-muted">Finding balance between work and personal life is key. Here are practical steps you can apply daily.</p>
-                                    <a href="blog.html" className="btn btn-sm btn-outline-success">Read More</a>
+                                    <Link href="/blog" className="btn btn-sm btn-outline-success">Read More</Link>
                                 </div>
                                 <div className="card-footer text-muted small">
                                     Posted on Aug 22, 2025 by Sarah
@@ -56,7 +57,7 @@ export default function Blogs() {
                                     <span className="badge bg-danger mb-2">Travel</span>
                                     <h5 className="card-title">Top 5 Destinations for 2025</h5>
                                     <p className="card-text text-muted">Looking for your next adventure? Check out these must-visit destinations around the world this year.</p>
-                                    <a href="blog.html" className="btn btn-sm btn-outline-danger">Read More</a>
+                                    <Link href="/blog" className="btn btn-sm btn-outline-danger">Read More</Link>
                                 </div>
                                 <div className="card-footer text-muted small">
                                     Posted on Aug 20, 2025 by John
