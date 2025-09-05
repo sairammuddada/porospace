@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 
 export default function Availability() {
 
+
     return (
         <>
             <Navbar />
@@ -20,9 +21,24 @@ export default function Availability() {
             <section className="py-5">
                 <div className="container">
                     <div className="row mb-4">
-                        <div className="col-md-4">
-                            <input type="text" id="searchInput" className="form-control" placeholder="Search by city or country" />
+
+                        <div className="col-md-3 position-relative dropdown">
+                            <input
+                                className="form-control pe-5"
+                                list="optionsList"
+                                placeholder="Search and select"
+                            />
+                            <datalist id="optionsList">
+                                <option value="Action" />
+                                <option value="Another action" />
+                                <option value="Something else here" />
+                                <option value="India" />
+                                <option value="USA" />
+                                <option value="UK" />
+                                <option value="Canada" />
+                            </datalist>
                         </div>
+
                         <div className="col-md-3">
                             <select id="weightFilter" className="form-select">
                                 <option value="">All Weights</option>

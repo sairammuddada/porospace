@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false)
@@ -39,6 +41,9 @@ export default function Navbar() {
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
                     >
                         <span className="navbar-toggler-icon"></span>
                     </button>
